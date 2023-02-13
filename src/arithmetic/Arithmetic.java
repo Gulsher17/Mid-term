@@ -17,7 +17,6 @@ import static java.time.Clock.system;
  */
 public class Arithmetic 
 {
-
     /**
      * @param args the command line arguments
      */
