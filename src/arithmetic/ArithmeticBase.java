@@ -18,14 +18,9 @@ public class ArithmeticBase
 {
  public enum Operation {PLUS,MINUS,DIVIDE,TIMES}
  
- private Operation operators;
+ private Operation c;
  
- public ArithmeticBase(Operation operators){
-     this.operators=operators;
- }
- public Operation getOperators(Operation operator){
-     this.operators=operators;
- }
+
  public double x,y;
  double calculate(double x, double y) {
    
@@ -33,12 +28,12 @@ public class ArithmeticBase
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
         String s= sc.next();
-        Operation r=Operation.valueOf(s);
-        r=Operation.PLUS;
-        r=Operation.MINUS;
-        r=Operation.TIMES;
-        r=Operation.DIVIDE;
-        switch (r) 
+        Operation c=Operation.valueOf(s);
+        c=Operation.PLUS;
+        c=Operation.MINUS;
+        c=Operation.TIMES;
+        c=Operation.DIVIDE;
+        switch (c) 
             
         {
             case PLUS:
