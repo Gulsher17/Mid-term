@@ -27,12 +27,13 @@ public class ArithmeticBase
              
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
+        System.out.println("PLUS, MINUS, DIVIDE ,TIMES");
         String s= sc.next();
         Operation c=Operation.valueOf(s);
         c=Operation.PLUS;
         c=Operation.MINUS;
-        c=Operation.TIMES;
         c=Operation.DIVIDE;
+        c=Operation.TIMES;
         switch (c) 
             
         {
